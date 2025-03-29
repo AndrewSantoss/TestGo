@@ -1,0 +1,9 @@
+#Usar a seguinte versão do GO
+FROM golang:1.24.1
+
+#Baixer as dependencias
+RUN go mod tidy
+
+#Compilar a aplicação
+RUN go run .\api\main.go
+
